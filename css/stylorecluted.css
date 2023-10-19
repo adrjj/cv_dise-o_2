@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat", sans-serif  ;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;0,600;0,800;0,900;1,100;1,200;1,500;1,600;1,800;1,900&family=Old+Standard+TT&display=swap');
+/*-----------botonera-----------------*/
+
+.contButton{
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end
+
+}
+
+.btnEstilo {
+    border: none;
+    padding: 0;
+    background-color: rgb(240, 241, 241);
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 5px 3px 3px #64646b59;
+    
+}
+
+.contImg, .contQr{
+    display: none;
+    
+}
+
+.ContSection{
+    display: flex;
+   padding: 3rem;
+    justify-content: center;
+
+    
+}
+
+
+.contCV{
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    display: grid;
+    width: 1000px;
+    height: 2500px;
+    background-color: #fff;
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: repeat(8,1fr) ; */
+    grid-template-rows: 1fr 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+    grid-template-areas: 
+    "cajaPri2  cajaPri2  cajaPri3  cajaPri3  cajaPri3  cajaPri3 "
+    "cajaPri1  cajaPri1  cajaPri1  cajaPri1  cajaPri1  cajaPri1 "
+    "cajaPri8  cajaPri8  cajaPri8  cajaPri8  cajaPri8  cajaPri8 "
+    "cajaPri4  cajaPri4  cajaPri4  cajaPri4  cajaPri4  cajaPri4 "
+    "cajaPri5  cajaPri5  cajaPri5  cajaPri5  cajaPri5  cajaPri5 "
+    "cajaPri6  cajaPri6  cajaPri6  cajaPri6  cajaPri6  cajaPri6 "
+    "cajaPri7  cajaPri7  cajaPri7  cajaPri7  cajaPri7  cajaPri7 "
+    "cajaPri7  cajaPri7  cajaPri7  cajaPri7  cajaPri7  cajaPri7 ";
+
+    animation: cvtransicion 1s alternate linear;
+}
+@keyframes cvtransicion {
+    0%{ opacity: 0%;}
+
+    100%{opacity: 100%;}
+    
+}
+
+.cajaPri1{
+    grid-area: cajaPri1;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.cajaPri2{
+    grid-area: cajaPri2;
+  
+}
+.cajaPri3{
+    grid-area: cajaPri3;
+   
+
+}
+.cajaPri4{
+    grid-area: cajaPri4;
+ 
+}
+.cajaPri5{
+    grid-area: cajaPri5;
+  
+}
+.cajaPri6{
+    grid-area: cajaPri6;
+
+}
+.cajaPri7{
+    grid-area: cajaPri7;
+   
+}
+.cajaPri8{
+    grid-area: cajaPri8;
+  
+}
+
+.contContactos{
+    display: flex;
+    gap: 2rem;
+    padding: 0.5rem 0 1rem 0;
+    border-bottom: 1px solid rgb(20, 19, 19);
+
+}
+.contA {
+    display: flex;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    text-decoration: none;
+
+}
+a p:hover{
+
+    font-weight: 800;
+    font-size: 1.25rem;
+/* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+
+a p{
+    
+        transition: font-size 0.8s linear 0.1s;
+    
+}
+.texContacto{
+    font-size:1.2rem ;
+    font-weight: 700;
+    color: #10100A;
+    
+}
+.icoContacto {
+    font-size:1.5rem ;
+    padding-right:1rem ;
+    color: #10100A;
+   
+}
+.fa-brands{
+
+    font-weight: bold;
+}
+
+.linea{
+    
+    display: none;
+ 
+}
+/*-------------iconos Redes-------------*/
+.redes{
+    display: none;
+  
+}
+
+
+/*-------------Nombre y profesion------------*/
+.contNombre{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: center;
+    padding: 2rem 2rem 0 2rem;
+}
+.Nombre {
+    line-height:4.5rem;
+    font-weight: 300;
+    font-size: 5rem;
+    color:#10100A;
+
+}
+.profesion{
+    font-style: italic;
+    margin-top: 1rem;
+    text-align: center;
+    color: #10100A;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+/*--------------perfil--------------------------*/
+.contPerfil{
+    padding: 3rem;
+}
+.contH3, h3{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.textPerfil{
+font-size: 1.2rem;
+}
+
+/*---------------Experiencia-----------------*/
+
+.contExperiencia, .contHerramientas, .contHabilidades, .contEducacion{
+    padding: 1rem 3rem 1rem 3rem;
+    border-bottom: 1px solid rgb(20, 19, 19);
+    margin: 0 2rem 0 2rem;
+}
+.expTitulo{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.expText{
+    margin-bottom: 1rem;
+}
+.habiH4{
+    margin-bottom: 0.5rem;
+}
+
+.textParrafo{
+    margin-bottom: 1rem;
+}
+/*---------------educacion-----------*/
+.eduH4{
+    margin-top: 0.5rem;
+}
+
+/*----------------------Idiomas--------------*/
+.contIdioma{
+    margin-top: 1rem;
+    padding-left: 5rem;
+}
+
+/*----------Fotos video enlaces videoPerfil----------*/
+.fotos, .contVideoPerfil,.enlaces,.vIdioma{
+    display:none
+}
+
+/*-------------------------media query------------*/
+@media(max-width:768px){
+    .contCV{
+
+       
+        grid-template-areas: 
+        "cajaPri2  cajaPri2  cajaPri2  cajaPri3  cajaPri3  cajaPri3 "
+        "cajaPri1  cajaPri1  cajaPri1  cajaPri3  cajaPri3  cajaPri3 "
+        "cajaPri8  cajaPri8  cajaPri8  cajaPri8  cajaPri8  cajaPri8 "
+        "cajaPri4  cajaPri4  cajaPri4  cajaPri4  cajaPri4  cajaPri4 "
+        "cajaPri5  cajaPri5  cajaPri5  cajaPri5  cajaPri5  cajaPri5 "
+        "cajaPri6  cajaPri6  cajaPri6  cajaPri6  cajaPri6  cajaPri6 "
+        "cajaPri7  cajaPri7  cajaPri7  cajaPri7  cajaPri7  cajaPri7 "
+        "cajaPri7  cajaPri7  cajaPri7  cajaPri7  cajaPri7  cajaPri7 ";
+    
+        
+    }
+    .cajaPri1,.cajaPri2,.cajaPri3{
+        background-color: rgb(236, 235, 235);
+    
+    }
+    .cajaPri1{
+        align-items: flex-start;
+        padding-left: 2rem;
+    }
+    .cajaPri2{
+    border-radius: 2rem  0 0 0 ;
+    }
+    .cajaPri3{
+        border-radius: 0rem  2rem 0 0 ;
+        }
+.Nombre {
+    font-size: 3.5rem;
+    line-height: 3rem;
+}
+.profesion{
+    font-size: 1.4rem;
+    text-align:left;
+    font-weight: 700;
+}
+.contContactos{
+    flex-direction: column;
+    gap: 0;
+    border-bottom: none;
+}
+.contA{
+    padding: 0;
+}
+.icoContacto{
+    font-size: 1.1rem;
+}
+.texContacto{
+    font-size: 0.8rem;
+}
+
+.contPerfil{
+    padding: 2rem 0 1rem 0;
+}
+.textPerfil{
+    font-size: 1rem;
+}
+.contNombre{
+    padding: 2rem 1rem 0 2rem;
+}
+
+.contExperiencia, .contHerramientas, .contHabilidades, .contEducacion {
+    padding: 1rem 3rem 1rem 0rem;
+   
+}
+.contIdioma{
+    padding-left: 2rem;
+}
+
+}
+/*--------------------------------*/
+@media(max-width:426px){
+    .ContSection{
+        padding: 0;
+    }
+    .contCV{
+
+       
+        grid-template-areas: 
+        "cajaPri2  cajaPri2  cajaPri2  cajaPri2  cajaPri2  cajaPri2 "
+        "cajaPri1  cajaPri1  cajaPri1  cajaPri1  cajaPri1  cajaPri1 "
+        "cajaPri3  cajaPri3  cajaPri3  cajaPri3  cajaPri3  cajaPri3 "
+        "cajaPri8  cajaPri8  cajaPri8  cajaPri8  cajaPri8  cajaPri8 "
+        "cajaPri4  cajaPri4  cajaPri4  cajaPri4  cajaPri4  cajaPri4 "
+        "cajaPri5  cajaPri5  cajaPri5  cajaPri5  cajaPri5  cajaPri5 "
+        "cajaPri6  cajaPri6  cajaPri6  cajaPri6  cajaPri6  cajaPri6 "
+        "cajaPri7  cajaPri7  cajaPri7  cajaPri7  cajaPri7  cajaPri7 "
+        ;
+    
+        
+    }
+    .cajaPri3{
+        border-radius: 0;
+        padding-left: 2rem;
+    }
+    .contNombre{
+        align-items: center;
+    }
+    .contPerfil {
+        padding: 1rem 0 1rem 0;
+    }
+    .cajaPri1{
+        padding: 1rem 0 0 3rem;
+    }
+    .cajaPri2{
+        border-radius: 0;
+    }
+    .cajaPri3{
+        margin-top: 0.5rem;
+    }
+    .contExperiencia, .contHerramientas, .contHabilidades, .contEducacion {
+        padding: 1rem 0rem 1rem 0rem;
+    }
+    .textPerfil{
+        padding-right: 0.5rem;
+    }
+    .contNombre {
+        padding: 2rem 0rem 0 0rem;
+    }
+    }
+    /*---------------------------------*/
+    @media(max-width:322px){
+
+    .contExperiencia, .contHerramientas, .contHabilidades, .contEducacion {
+        padding: 0;
+       
+        margin: 0 1rem 0 1rem;
+    }
+    .cajaPri1{
+        padding: 1rem 0 0 2rem;
+    }
+    
+    .profesion{
+        text-align: center;
+    }
+  
+    
+    }
+
+
+    

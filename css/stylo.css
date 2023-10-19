@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;0,600;0,800;0,900;1,100;1,200;1,500;1,600;1,800;1,900&family=Old+Standard+TT&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat", sans-serif  ;
+}
+
+
+
+/*-----------botonera-----------------*/
+.contButton{
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+ 
+    
+    
+
+} 
+.btnEstilo {
+    border: none;
+    padding: 0;
+    background-color: #62e6fd;
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 5px 3px 3px #64646b59;
+
+}
+
+.btnEstilo  :active{
+    background-color: #1ca2b9;
+    
+}
+
+
+.ContSection{
+    display: flex;
+   
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+    }
+
+
+/*---------------SECTION PRINCIPAL-------------------------*/
+
+
+.contCV{
+ 
+
+    display: grid;
+    width: 1000px;
+    height:2000px;
+    background-color:#232525;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8,1fr) ;
+    grid-template-areas: 
+    "cajaPri1  cajaPri1  cajaPri2  cajaPri2  cajaPri2  cajaPri2 "
+    "cajaPri1  cajaPri1  cajaPri3  cajaPri3  cajaPri3  cajaPri3 "
+    "cajaPri1  cajaPri1  cajaPri4  cajaPri4  cajaPri4  cajaPri4 "
+    "cajaPri1  cajaPri1  cajaPri5  cajaPri5  cajaPri5  cajaPri5 "
+    "cajaPri6  cajaPri6  cajaPri8  cajaPri8  cajaPri8  cajaPri8 "
+    "cajaPri6  cajaPri6  cajaPri8  cajaPri8  cajaPri8  cajaPri8 "
+    "cajaPri7  cajaPri7  cajaPri8  cajaPri8  cajaPri8  cajaPri8 "
+    "cajaPri7  cajaPri7  cajaPri8  cajaPri8  cajaPri8  cajaPri8 ";
+    animation: cvtransicion1 1s alternate linear;
+}
+
+@keyframes cvtransicion1 {
+    0%{ opacity: 0%;}
+
+    100%{opacity: 100%;}
+    
+}
+.cajaPri1{
+    grid-area: cajaPri1;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.cajaPri2{
+    grid-area: cajaPri2;
+
+}
+.cajaPri3{
+    grid-area: cajaPri3;
+
+
+}
+.cajaPri4{
+    grid-area: cajaPri4;
+
+}
+.cajaPri5{
+    grid-area: cajaPri5;
+
+}
+.cajaPri6{
+    grid-area: cajaPri6;
+
+}
+.cajaPri7{
+    grid-area: cajaPri7;
+
+}
+.cajaPri8{
+    grid-area: cajaPri8;
+    
+}
+
+
+/*----------caja principal 1-----------*/
+
+.contVideoPerfil{
+    display: flex;
+  
+
+}
+.videoPerfil{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+ 
+  
+  object-fit: cover;
+  object-position: 0rem -3rem;
+  box-shadow: 0px 7px 10px #232525;
+}
+
+
+
+.contContactos{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+.contA {
+    display: flex;
+    padding: 0.5rem;
+    text-decoration: none;
+
+}
+.contA, .texContacto:hover{
+
+    font-weight: 800;
+    font-size: 1.25rem;
+/* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+
+.contA, .texContacto {
+    
+        transition: color 0.8s linear 0.1s;
+    
+}
+.texContacto{
+    font-size:1.2rem ;
+    font-weight: 700;
+    color: #10100A;
+    
+}
+.icoContacto {
+    font-size:1.5rem ;
+    padding-right:1rem ;
+    color: #10100A;
+}
+.linea{
+    
+    background-color: #10100A;
+    width: 70%;
+    height: 2px; 
+ 
+}
+
+
+
+/*-------------iconos Redes-------------*/
+.redes{
+    display: flex;
+    gap: 3rem;
+}
+.icono1{
+color:  #10100A;
+font-size: 2rem;
+
+}
+
+
+/*--------------------nombre  profesion y perfil-----------*/
+
+.cajaPri2{
+    background-color: #232525;
+}
+.contNombre{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: center;
+   margin-left: 3rem;
+}
+.Nombre {
+    font-weight: 300;
+font-size: 5rem;
+    color: #76FB47;
+}
+.profesion{
+    color: #E5E5E5;
+}
+.contH3{
+
+    background-color: #76FB47;
+    width:16rem;
+}
+.miH3{
+    margin-left: 3rem;
+    color:#10100A;
+    font-weight: 800;
+    font-size: 1.5rem;
+
+   
+}
+.eduH4{
+    font-size: 1rem;
+    color: #76FB47;
+    padding: 1rem 0rem 0.2rem 3rem;
+}
+.habiH4{
+    color: #76FB47;
+    padding: 1rem 0rem 0rem 3rem;
+}
+.textParrafo{
+    color: #E5E5E5;
+    width: 80%;
+    text-justify: auto;
+    padding: 0.2rem 0rem 1rem 3rem;
+}.textPerfil{
+    padding-top: 1rem;
+}
+.eduText{
+    color: #E5E5E5;
+    padding: 0rem 0rem 0.5rem 3rem;
+}
+
+
+.contNombre, .contPerfil, .contEducacion, .contHabilidades{
+    padding-bottom: 2rem;
+   
+} 
+
+/*-------------------caja 3 herramientas---------------*/
+.cajaPri3{
+    background-color:#232525;
+}
+
+.contHerramientas{
+padding-top: 2rem;
+
+}
+
+/*-----------------caja 3 experiencia---------------*/
+.cajaPri4{
+    background-color: #232525;
+}
+.contExperiencia{
+    padding:2rem 0 0 0 ;
+}
+.expH4{
+    color: #76FB47;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.expText{
+    color: #E5E5E5;
+    font-weight: 300;
+    padding: 0.2rem 0rem 0rem 3rem;
+}
+.expTitulo{
+    padding: 0.5rem 0 0 3rem;
+}
+
+.contIdioma{
+  margin-top: 8rem;
+}
+/*------------------estilos que hay que anular de boopstrap------------------*/
+h4{
+   font-weight: 800;
+   margin-bottom: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+    line-height: 1.4rem
+}
+
+/*--------------------fotos-------------------------*/
+
+.fotos{
+    background-color:#232525;
+ 
+    width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.contCarrusel{
+
+    padding: 2rem 8rem 1rem 8rem;
+    box-shadow: 5px 3px 3px #64646b59;
+  
+}
+.cajaCarrousel{
+    border-radius: 0.5rem;
+    box-shadow: 7px 5px 21px #101010b5;
+}
+.contText{
+    margin-top: 1rem;
+}
+/*----------------------------Enlaces---------------------*/
+.enlaces{
+    background-color:#232525;
+    width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0  3rem 0rem;
+}
+.miLink{
+    padding-left: 3rem;
+    text-decoration: none;
+    color: #76FB47;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+
+/*---------------------------video idioma--------------------------*/
+
+.contVideoIdioma{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.vIdioma{
+    background-color: #232525;
+    width: 1000px;
+
+}
+/*----------------------Media query-----------------------*/
+
+@media(max-width:768px){
+
+    .contCV{
+    width: 768px;
+    height: 2050px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8,1fr) ;
+    grid-template-areas: 
+    "cajaPri1  cajaPri1  cajaPri1  cajaPri2  cajaPri2  cajaPri2 "
+    "cajaPri1  cajaPri1  cajaPri1  cajaPri3  cajaPri3  cajaPri3 "
+    "cajaPri1  cajaPri1  cajaPri1  cajaPri4  cajaPri4  cajaPri4 "
+    "cajaPri5  cajaPri5  cajaPri5  cajaPri5  cajaPri5  cajaPri5 "
+    "cajaPri6  cajaPri6  cajaPri6  cajaPri8  cajaPri8  cajaPri8 "
+    "cajaPri6  cajaPri6  cajaPri6  cajaPri8  cajaPri8  cajaPri8 "
+    "cajaPri7  cajaPri7  cajaPri7  cajaPri8  cajaPri8  cajaPri8 "
+    "cajaPri7  cajaPri7  cajaPri7  cajaPri8  cajaPri8  cajaPri8 ";
+}
+
+.videoPerfil{
+    width: 150px;
+    height: 150px;
+}
+.contA{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1rem;
+}
+
+.texContacto{
+    font-size: 0.9rem;
+}
+.redes{
+    gap: 2rem;
+}
+.fotos, .enlaces,.vIdioma{
+    width: 768px;
+}
+
+.videoIdioma{
+    width: 500px;
+    height: auto;
+}
+
+.contNombre{
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+}
+.textParrafo{
+    padding: 0.2rem 0rem 1rem 1rem;
+    
+}
+.profesion{
+    font-size:1.2rem;
+
+}
+.contNombre, .contPerfil, .contEducacion, .contHabilidades {
+    padding-bottom: 1rem;
+}
+.contH3{
+    width: 11rem;
+}
+.miH3{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+.textPerfil {
+    width: 350px;
+    font-size: 0.8rem;
+}
+
+.contHabi{
+    display: flex;
+    gap: 2rem;
+}
+.habiH4 {
+    
+    padding: 1rem 0rem 0rem 1rem;
+}
+.eduH4{
+    padding: 1rem 0rem 0.2rem 1rem;
+}
+.expTitulo {
+    padding: 0.5rem 0 0 1rem;
+}
+.eduText, .expText{
+    padding: 0rem 0rem 0.5rem 1rem;
+}
+.contEducacion{
+    width: 350px;
+}
+.contCarrusel{
+    width: 600px;
+    padding: 1rem;
+}
+.miLink{
+    padding-left: 1rem;
+}
+.contCarruFotos{
+    display: flex;
+    justify-content: center;
+}
+.contVideoIdioma{
+    width: 600px;
+}
+
+/*------------fotos-----------------*/
+.contCarrusel{
+    display: flex;
+    justify-content: center;
+}
+.contCarrusel{
+    box-shadow: none;
+}
+
+.contCarruVideo{
+    display: flex;
+    justify-content: center;
+}
+}
+/*----------------------------------------------------*/
+
+@media(max-width:426px){
+
+    .contCV{
+ 
+
+        display: grid;
+        width: 425px;
+        height:2880px;
+   
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8,1fr) ;
+        grid-template-areas: 
+        "cajaPri2  cajaPri2   "
+        "cajaPri1  cajaPri1   "
+        "cajaPri3  cajaPri3   "
+        "cajaPri4  cajaPri4   "
+        "cajaPri5  cajaPri5   "
+        "cajaPri6  cajaPri6   "
+        "cajaPri7  cajaPri7   "
+        "cajaPri8  cajaPri8   ";
+        animation: cvtransicion1 1s alternate linear;
+    }
+
+    .fotos, .enlaces,.vIdioma{
+        width: 425px;
+    }
+
+    .contCarrusel,.videoIdioma  {
+        width: 350px;
+        
+    }
+
+    .contNombre{
+        align-items: center;
+        margin: 0;
+        padding: 1rem;
+    }
+.Nombre{
+    line-height: 4.5rem;
+}
+
+.cajaPri1{
+    padding: 2.5rem 0 2.5rem 0;
+}
+.redes{
+    margin-bottom: 2rem;
+}
+.linea{
+    height: 1px;
+    width: 50%;
+    margin: 2rem 0 3rem 0;
+}
+.contA{
+    flex-direction: row;
+}
+.contContactos{
+    padding-top: 1rem;
+}
+.contQr, img{
+    width: 120px;
+}
+.textPerfil, .textParrafo,.eduText {
+    width: 376px;
+    font-size: 0.7rem;
+}
+.contH3{
+    margin-bottom: 0.5rem;
+}
+.miH3{
+    font-size: 1rem;
+    margin-bottom: 0;
+    line-height: none;
+}
+.contHabi{
+    display: block;
+}
+.habiH4,.eduH4, .miLink{
+    font-size: 0.9rem;
+}
+.expH4{
+    font-size: 1.2rem;
+}
+.expText{
+    font-size: 1rem;
+}
+.contIdioma{
+    margin-top: 0;
+}
+.contHerramientas, .contExperiencia{
+    padding-top: 0;
+}
+.cajaPri3{
+    margin-top: 1rem;
+}
+.contCarruFotos{
+    display: flex;
+   justify-content: center;
+}
+}
+@media(max-width:375px){
+
+    .contCV{
+        width: 375px;
+        height:2925px;
+        justify-items: center;
+    }
+
+    .textPerfil, .textParrafo, .eduText {
+        width: 360px;
+        font-size: 0.7rem;
+    }
+    .fotos, .enlaces, .vIdioma {
+        width: 375px;
+    }
+}
+@media(max-width:322px){
+
+    .contCV{
+        width: 320px;
+        height:2900px;
+        justify-items: center;
+    }
+
+    .textPerfil, .textParrafo, .eduText {
+        width: 320px;
+        font-size: 0.7rem;
+    }
+    .fotos, .enlaces, .vIdioma {
+        width: 320px;
+    }
+    .contCarrusel, .videoIdioma {
+        width: 300px;
+    }
+    .contEducacion{
+        width: 320px;
+    }
+}
+
