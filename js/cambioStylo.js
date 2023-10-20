@@ -8,5 +8,8 @@
  }
 
 
+document.getElementById('videoPerfilUno').play(); 
+
+
 
 
