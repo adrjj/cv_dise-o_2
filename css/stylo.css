@@ -138,7 +138,12 @@
   object-position: 0rem 0rem;
   box-shadow: 0px 7px 10px #232525;
 }
-
+.imgPerfil{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0px 7px 10px #232525;
+}
 
 
 .contContactos{
