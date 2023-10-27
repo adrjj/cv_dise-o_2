@@ -8,8 +8,6 @@
  }
 
 
-document.getElementById('videoPerfilUno').play(); 
-
 
 
 

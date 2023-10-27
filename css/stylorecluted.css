@@ -315,7 +315,7 @@ font-size: 1.2rem;
 
 }
 /*--------------------------------*/
-@media(max-width:426px){
+@media(max-width:636px){
     .ContSection{
         padding: 0;
     }

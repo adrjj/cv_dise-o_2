@@ -15,9 +15,8 @@
     display: flex;
     justify-content: flex-end;
     position: relative;
- 
     
-    
+
 
 } 
 .btnEstilo {
@@ -370,7 +369,7 @@ p{
 
     .contCV{
     width: 768px;
-    height: 2050px;
+    height: 2136px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(8,1fr) ;
     grid-template-areas: 
@@ -488,7 +487,7 @@ p{
 }
 /*----------------------------------------------------*/
 
-@media(max-width:426px){
+@media(max-width:576px){
 
     .contCV{
  
@@ -496,7 +495,7 @@ p{
         display: grid;
         width: 425px;
         height:2880px;
-   
+   background-color: #1ca2b9;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(8,1fr) ;
         grid-template-areas: 
@@ -590,6 +589,7 @@ p{
 @media(max-width:375px){
 
     .contCV{
+        background-color: red;
         width: 375px;
         height:2925px;
         justify-items: center;
@@ -606,6 +606,7 @@ p{
 @media(max-width:322px){
 
     .contCV{
+        background-color: blueviolet;
         width: 320px;
         height:2900px;
         justify-items: center;
