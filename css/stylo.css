@@ -495,7 +495,7 @@ p{
         display: grid;
         width: 425px;
         height:2981px;
-        background-color: #1ca2b9;
+      
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(8,1fr) ;
         grid-template-areas: 
@@ -588,7 +588,7 @@ p{
 }
 @media(max-width:400px){
 .contCV{
-    background-color: purple;
+  
     width: 400px;
 }
 .fotos, .enlaces, .vIdioma {
@@ -599,7 +599,7 @@ p{
 @media(max-width:375px){
 
     .contCV{
-        background-color: red;
+     
         width: 375px;
         height:2925px;
         justify-items: center;
@@ -616,7 +616,7 @@ p{
 @media(max-width:322px){
 
     .contCV{
-        background-color: blueviolet;
+        
         width: 320px;
         height:2900px;
         justify-items: center;
